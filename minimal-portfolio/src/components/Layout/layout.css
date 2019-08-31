@@ -1,5 +1,12 @@
 @import url(https://db.onlinewebfonts.com/c/1801a6fff226758d3727731bf5b23ba5?family=Wes+FY);
 
+@font-face {
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Regular'), url('../../fonts/AvenirNextLTPro-Regular.woff') format('woff');
+}
+
 html {
   font-family: "Wes FY", sans-serif;
   -ms-text-size-adjust: 100%;
@@ -13,3 +20,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.Header {
+  position: relative;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'Avenir Next', sans-serif;
+}
