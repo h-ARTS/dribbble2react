@@ -1,0 +1,29 @@
+.Menu {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  height: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.4s ease-out 0.5s;
+}
+
+.Menu .Menu-list {
+  list-style: none;
+  padding: 15px 0 0;
+  text-align: right;
+  margin-top: 0;
+}
+
+.Menu .Menu-list .Menu-list-item {
+  padding: 7px 0;
+}
+
+.Menu .Menu-list .Menu-list-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.Menu .Menu-list .Menu-list-item a:hover {
+  text-decoration: underline; 
+}

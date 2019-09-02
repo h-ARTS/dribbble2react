@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Menu from './Menu';
 
 const NavbarGroup = styled.div`
   background: transparent;
@@ -12,12 +13,29 @@ const NavbarGroup = styled.div`
 
 const BurgerMenu = styled.div`
   display: grid;
+  position: relative;
   grid-row-gap: 8px;
   align-items: center;
+  padding: 10px;
   span {
     width: 25px;
     height: 1px;
     background-color: #666;
+    transition: 0.4s cubic-bezier(0.03, 0.17, 0.07, 1.86);
+  }
+  &:hover {
+    span {
+      &:first-child {
+        transform: rotate(45deg) translate(0px, 4px);
+      }
+      &:nth-child(2) {
+        transform: rotate(-45deg) translate(2px, -7px);
+      }
+    }
+
+    .Menu {
+      opacity: 1;
+    }
   }
 `
 
@@ -36,6 +54,7 @@ const Navbar = () => (
     <BurgerMenu>
       <span></span>
       <span></span>
+      <Menu />
     </BurgerMenu>
   </NavbarGroup>
 )
