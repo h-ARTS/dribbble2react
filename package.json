@@ -1,0 +1,8 @@
+{
+    "name": "root",
+    "private": true,
+    "workspaces": [
+        "minimal-portfolio",
+        "other-apps/*"
+    ]
+}
